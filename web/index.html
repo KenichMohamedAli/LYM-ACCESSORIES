@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessories by LYM — Bijoux & accessoires fantaisie · Livraison 69 wilayas</title>
+<meta name="description" content="Parures, packs, bracelets, colliers, boucles d'oreilles, bagues et montres. Accessoires by LYM — little details, big impact. Livraison dans les 69 wilayas d'Algérie, gratuite à l'USTHB et à l'ESAA.">
+<meta name="theme-color" content="#E9D6CC">
+<meta property="og:title" content="Accessories by LYM — little details, big impact">
+<meta property="og:description" content="Bijoux fantaisie & montres. Livraison 69 wilayas · gratuit USTHB & ESAA · paiement à la livraison.">
+<meta property="og:image" content="assets/brand/logo.jpeg">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/brand/logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&family=Pinyon+Script&family=Tajawal:wght@300;400;500;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+/* La langue est appliquée avant le premier rendu : pas de flash de mise en page RTL. */
+(function(){
+  try {
+    var l = JSON.parse(localStorage.getItem("lym_lang_v1")) || "";
+    if (l === "ar" || l === "fr" || l === "en"){
+      var h = document.documentElement;
+      h.lang = l; h.dir = l === "ar" ? "rtl" : "ltr"; h.className = "lang-" + l;
+    }
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<div class="noise" aria-hidden="true"></div>
+<a class="skip" href="#boutique" data-i18n="a.skip">Aller à la boutique</a>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top" data-i18n-aria="a.home">
+      <span class="brand__mark"><img src="assets/brand/logo.jpeg" alt="" width="64" height="64"></span>
+      <span class="brand__txt">
+        <strong>accessories<span class="brand__dot">.</span>by<span class="brand__dot">.</span>lym</strong>
+        <em>little details, big impact</em>
+      </span>
+    </a>
+
+    <nav class="nav__links" aria-label="Navigation principale" data-i18n-aria="a.mainnav">
+      <a href="#boutique" data-i18n="nav.shop">Boutique</a>
+      <a href="#categories" data-i18n="nav.collections">Collections</a>
+      <a href="#livraison" data-i18n="nav.shipping">Livraison</a>
+      <a href="#faq" data-i18n="nav.info">Infos</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <div class="lang" id="lang" role="group" data-i18n-aria="a.lang">
+        <button type="button" data-lang="ar" lang="ar">عربي</button>
+        <button type="button" data-lang="fr">FR</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="cart-btn" id="cartBtn" data-i18n-aria="a.cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1.2 11a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7Z"/><path d="M9.2 7V5.8a2.8 2.8 0 0 1 5.6 0V7"/></svg>
+        <span class="cart-btn__count" id="cartCount" hidden>0</span>
+      </button>
+      <button class="burger" id="burger" data-i18n-aria="a.menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav__sheet" id="sheet">
+    <div class="sheet__grid">
+      <a href="#boutique"><span data-i18n="nav.shop">Boutique</span><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></a>
+      <a href="#categories"><span data-i18n="nav.collections">Collections</span><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></a>
+      <a href="#livraison"><span data-i18n="nav.shipping">Livraison</span><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></a>
+      <a href="#faq"><span data-i18n="nav.info">Infos</span><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></a>
+      <a href="#contact"><span data-i18n="nav.contact">Contact</span><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></a>
+    </div>
+    <div class="sheet__cats" id="sheetCats"></div>
+    <a class="btn btn--ghost sheet__order" href="https://instagram.com/accessories.by.lym" target="_blank" rel="noopener" data-i18n="cta.contactIg">Nous écrire sur Instagram</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow" data-reveal data-i18n="hero.eyebrow">Bijoux fantaisie · Montres · Algérie</p>
+        <h1 class="hero__title" data-reveal data-i18n="hero.title">
+          Des <span class="il">détails</span> qui<br>
+          changent <em>tout</em> ton look
+        </h1>
+        <p class="hero__lede" data-reveal data-i18n="hero.lede">
+          Parures, packs, bracelets, colliers, boucles, bagues et montres choisis avec soin.
+          Commande en quelques secondes, paie à la livraison.
+        </p>
+        <div class="hero__cta" data-reveal>
+          <a class="btn btn--solid" href="#boutique">
+            <span data-i18n="cta.collection">Voir la collection</span>
+            <svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--glass" href="https://instagram.com/accessories.by.lym" target="_blank" rel="noopener" data-i18n="cta.contactIg">Nous écrire sur Instagram</a>
+        </div>
+        <ul class="hero__chips" data-reveal>
+          <li data-i18n="hero.chip1"><b>69 wilayas</b> livrées</li>
+          <li data-i18n="hero.chip2"><b>Gratuit</b> USTHB & ESAA</li>
+          <li data-i18n="hero.chip3"><b>Paiement</b> à la livraison</li>
+        </ul>
+      </div>
+
+      <div class="hero__visual" data-reveal>
+        <div class="hero__card">
+          <img src="assets/brand/logo.jpeg" alt="Accessories by LYM" data-i18n-alt="alt.logo" width="512" height="512">
+          <span class="spark spark--1"></span>
+          <span class="spark spark--2"></span>
+          <span class="spark spark--3"></span>
+        </div>
+        <p class="hero__script" data-i18n="hero.script">little details, big impact</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ MARQUEE ══════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track" id="marquee"></div>
+  </div>
+
+  <!-- ══════════ CATEGORIES ══════════ -->
+  <section class="section cats" id="categories">
+    <div class="section__head" data-reveal>
+      <h2 class="section__title" data-i18n="cats.title">Nos <em>collections</em></h2>
+      <p class="section__lede" data-i18n="cats.lede">Choisis une catégorie, la boutique se filtre instantanément.</p>
+    </div>
+    <div class="cats__grid" id="catGrid"></div>
+  </section>
+
+  <!-- ══════════ SHOP ══════════ -->
+  <section class="section shop" id="boutique">
+    <div class="section__head" data-reveal>
+      <h2 class="section__title" data-i18n="shop.title">La <em>boutique</em></h2>
+      <p class="section__lede" data-i18n="shop.lede">Prix en dinars algériens · stock mis à jour régulièrement.</p>
+    </div>
+
+    <div class="toolbar" data-reveal>
+      <div class="pills" id="pills" role="tablist" aria-label="Filtrer par catégorie" data-i18n-aria="a.pills"></div>
+      <div class="toolbar__right">
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+          <input type="search" id="search" dir="auto" data-i18n-ph="shop.searchPh" data-i18n-aria="shop.searchAria">
+        </label>
+        <label class="select">
+          <select id="sort" data-i18n-aria="shop.sortAria">
+            <option value="featured" data-i18n="sort.featured">Nos favoris</option>
+            <option value="asc" data-i18n="sort.asc">Prix croissant</option>
+            <option value="desc" data-i18n="sort.desc">Prix décroissant</option>
+            <option value="new" data-i18n="sort.new">Nouveautés</option>
+          </select>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </label>
+      </div>
+    </div>
+
+    <p class="shop__count" id="count" data-reveal></p>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" hidden>
+      <p data-i18n="shop.empty">Aucun accessoire ne correspond à ta recherche.</p>
+      <button class="btn btn--glass" id="resetBtn" data-i18n="shop.reset">Tout afficher</button>
+    </div>
+  </section>
+
+  <!-- ══════════ WHY / LOOKBOOK ══════════ -->
+  <section class="section why" id="pourquoi">
+    <div class="why__media" data-reveal>
+      <img src="assets/brand/lookbook.jpeg" alt="Mains portant bagues, bracelets et montres Accessories by LYM" data-i18n-alt="alt.lookbook" loading="lazy">
+      <div class="why__badge glass">
+        <b data-i18n="why.badge1">Économise</b>
+        <span data-i18n="why.badge2">le style reste entier</span>
+      </div>
+    </div>
+    <div class="why__body">
+      <h2 class="section__title" data-reveal data-i18n="why.title">Pourquoi <em>LYM</em> ?</h2>
+      <div class="why__list">
+        <article class="why__item glass" data-reveal>
+          <span class="why__num">01</span>
+          <h3 data-i18n="why.1t">Sélection, pas stock</h3>
+          <p data-i18n="why.1p">Chaque pièce est choisie pour tenir au quotidien : finition plaquée or, fermoirs solides, perles qui ne ternissent pas après deux jours.</p>
+        </article>
+        <article class="why__item glass" data-reveal>
+          <span class="why__num">02</span>
+          <h3 data-i18n="why.2t">Commande en 30 secondes</h3>
+          <p data-i18n="why.2p">Ajoute au panier, remplis le formulaire et envoie : ta commande arrive directement chez la vendeuse. On te confirme la disponibilité et le délai juste après.</p>
+        </article>
+        <article class="why__item glass" data-reveal>
+          <span class="why__num">03</span>
+          <h3 data-i18n="why.3t">Tu paies quand tu reçois</h3>
+          <p data-i18n="why.3p">Paiement à la livraison partout en Algérie, ou en main propre à l'USTHB et à l'ESAA — sans frais.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ LIVRAISON ══════════ -->
+  <section class="section ship" id="livraison">
+    <div class="section__head" data-reveal>
+      <h2 class="section__title" data-i18n="ship.title">Livraison &amp; <em>retrait</em></h2>
+      <p class="section__lede" data-i18n="ship.lede">Partout en Algérie, et gratuitement sur tes deux campus.</p>
+    </div>
+
+    <div class="ship__grid">
+      <article class="ship__card glass" data-reveal>
+        <span class="ship__icon"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg></span>
+        <h3 data-i18n="ship.69">69 wilayas</h3>
+        <p data-i18n="ship.p1">Expédition sous 24–48 h, réception entre 1 et 5 jours ouvrés selon la destination. Tarifs affichés au panier dès que tu choisis ta wilaya.</p>
+        <ul class="ship__fees">
+          <li><span data-i18n="zone.centre">Centre</span><b>400 DA</b></li>
+          <li><span data-i18n="zone.estouest">Est / Ouest</span><b>500 DA</b></li>
+          <li><span data-i18n="zone.sud">Sud</span><b>650 DA</b></li>
+          <li><span data-i18n="zone.grandsud">Grand Sud</span><b>850 DA</b></li>
+        </ul>
+      </article>
+
+      <article class="ship__card ship__card--free glass" data-reveal>
+        <span class="ship__tag" data-i18n="ship.free">Gratuit</span>
+        <span class="ship__icon"><svg viewBox="0 0 24 24"><path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"/><path d="M6.5 10v5.2c0 1.4 2.5 2.6 5.5 2.6s5.5-1.2 5.5-2.6V10"/><path d="m21 7.5 0 6"/></svg></span>
+        <h3 data-i18n="ship.campus">Retrait campus</h3>
+        <p data-i18n="ship.p2">Rien à payer pour la livraison : tu récupères ta commande sur le campus, au créneau convenu par message.</p>
+        <ul class="ship__zones">
+          <li><b>USTHB</b><span data-i18n="ship.usthb">Bab Ezzouar — Alger</span></li>
+          <li><b>ESAA</b><span data-i18n="ship.esaa">École Supérieure des Arts — Ben Aknoun</span></li>
+        </ul>
+        <a class="link" href="https://ig.me/m/accessories.by.lym" target="_blank" rel="noopener" data-i18n="ship.slot">Convenir d'un créneau →</a>
+      </article>
+
+      <article class="ship__card glass" data-reveal>
+        <span class="ship__icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M4 9h16M8 5v14"/></svg></span>
+        <h3 data-i18n="ship.how">Comment ça marche</h3>
+        <ol class="ship__steps">
+          <li data-i18n="ship.s1"><b>Tu choisis</b> tes pièces et tu les ajoutes au panier.</li>
+          <li data-i18n="ship.s2"><b>Tu envoies</b> ta commande depuis le site, sans paiement en ligne.</li>
+          <li data-i18n="ship.s3"><b>On confirme</b> le stock, le mode et le délai.</li>
+          <li data-i18n="ship.s4"><b>Tu règles</b> à la livraison ou en main propre.</li>
+        </ol>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════ FAQ ══════════ -->
+  <section class="section faq" id="faq">
+    <div class="section__head" data-reveal>
+      <h2 class="section__title" data-i18n="faq.title">Bon à <em>savoir</em></h2>
+    </div>
+    <div class="faq__list" id="faqList"></div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="section contact" id="contact">
+    <div class="contact__box glass" data-reveal>
+      <p class="eyebrow" data-i18n="contact.eyebrow">Une question, une pièce sur mesure ?</p>
+      <h2 class="section__title" data-i18n="contact.title">Écris-nous <em>directement</em></h2>
+      <p class="section__lede" data-i18n="contact.lede">Réponse en général sous quelques heures, du dimanche au jeudi.</p>
+      <div class="contact__grid">
+        <a class="social" href="https://instagram.com/accessories.by.lym" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="dot" cx="17" cy="7" r="1.2"/></svg>
+          <span>Instagram<b>@accessories.by.lym</b></span>
+        </a>
+        <a class="social" href="https://www.tiktok.com/@accessories.by.lym" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 5.5A4.5 4.5 0 0 0 18.5 10"/></svg>
+          <span>TikTok<b>@accessories.by.lym</b></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <img src="assets/brand/logo.jpeg" alt="" width="56" height="56">
+      <p>Accessories by LYM — <span data-i18n="foot.tag">little details, big impact.</span></p>
+    </div>
+    <nav class="footer__nav" aria-label="Catégories" data-i18n-aria="a.footerCats">
+      <div>
+        <h4 data-i18n="nav.shop">Boutique</h4>
+        <ul id="footerCats"></ul>
+      </div>
+      <div>
+        <h4 data-i18n="nav.info">Infos</h4>
+        <ul>
+          <li><a href="#livraison" data-i18n="footer.l1">Livraison 69 wilayas</a></li>
+          <li><a href="#livraison" data-i18n="footer.l2">Retrait USTHB & ESAA</a></li>
+          <li><a href="#faq" data-i18n="footer.l3">Paiement & délais</a></li>
+          <li><a href="#contact" data-i18n="footer.l4">Nous contacter</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="footer__bottom">
+    <p>© <span id="year"></span> Accessories by LYM · <span data-i18n="footer.city">Alger, Algérie</span></p>
+    <p data-i18n="footer.note">Prix en dinars algériens (DA) · Paiement à la livraison</p>
+  </div>
+</footer>
+
+<!-- ══════════ PANIER ══════════ -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="cart" id="cart" aria-hidden="true">
+  <header class="cart__head">
+    <div>
+      <h2 data-i18n="cart.title">Ton panier</h2>
+      <p id="cartMeta"></p>
+    </div>
+    <button class="icon-btn" id="cartClose" data-i18n-aria="a.closeCart">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
+  </header>
+
+  <div class="cart__body" id="cartBody"></div>
+
+  <div class="cart__empty" id="cartEmpty">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1.2 11a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7Z"/><path d="M9.2 7V5.8a2.8 2.8 0 0 1 5.6 0V7"/></svg>
+    <p data-i18n="cart.empty">Ton panier est vide.</p>
+    <button class="btn btn--solid" id="cartShop" data-i18n="cart.browse">Parcourir la boutique</button>
+  </div>
+
+  <footer class="cart__foot" id="cartFoot">
+    <div class="ship-pick">
+      <p class="ship-pick__label" data-i18n="cart.mode">Mode de réception</p>
+      <div class="ship-pick__opts" id="shipOpts">
+        <button data-ship="usthb">USTHB · <span data-i18n="cart.freeShort">gratuit</span></button>
+        <button data-ship="esaa">ESAA · <span data-i18n="cart.freeShort">gratuit</span></button>
+        <button data-ship="wilaya" class="is-active" data-i18n="cart.wilaya">Wilaya</button>
+      </div>
+      <label class="select select--full" id="wilayaWrap">
+        <select id="wilaya" data-i18n-aria="a.wilaya"></select>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </label>
+    </div>
+
+    <dl class="totals">
+      <div><dt data-i18n="cart.sub">Sous-total</dt><dd id="sub">0 DA</dd></div>
+      <div><dt data-i18n="cart.shipping">Livraison</dt><dd id="fee">—</dd></div>
+      <div class="totals__grand"><dt data-i18n="cart.total">Total</dt><dd id="total">0 DA</dd></div>
+    </dl>
+
+    <button class="btn btn--solid btn--block" id="toCheckout">
+      <span data-i18n="cart.checkout">Passer commande</span>
+      <svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+    </button>
+    <p class="cart__note" data-i18n="cart.note">Ta commande arrive directement chez la vendeuse — on confirme dans la foulée.</p>
+  </footer>
+</aside>
+
+<!-- ══════════ CHECKOUT ══════════ -->
+<div class="modal" id="checkout" aria-hidden="true">
+  <div class="modal__panel glass" role="dialog" aria-modal="true" aria-labelledby="coTitle">
+    <header class="modal__head">
+      <h2 id="coTitle" data-i18n="co.title">Finaliser la commande</h2>
+      <button class="icon-btn" data-close data-i18n-aria="a.close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+
+    <form class="form" id="form" novalidate>
+      <div class="form__row">
+        <label><span data-i18n="co.name">Nom & prénom</span><input name="name" dir="auto" autocomplete="name" required data-i18n-ph="co.namePh"></label>
+        <label><span data-i18n="co.phone">Téléphone</span><input name="phone" type="tel" dir="auto" inputmode="tel" autocomplete="tel" required data-i18n-ph="co.phonePh"></label>
+      </div>
+      <div class="form__row">
+        <label id="coWilayaField"><span data-i18n="co.wilaya">Wilaya</span><select name="wilaya" id="coWilaya"></select></label>
+        <label><span data-i18n="co.city">Commune / point de retrait</span><input name="city" id="coCity" dir="auto" required data-i18n-ph="co.cityPh"></label>
+      </div>
+      <label><span data-i18n="co.address">Adresse ou créneau convenu</span><textarea name="address" dir="auto" rows="2" data-i18n-ph="co.addressPh"></textarea></label>
+      <label><span data-i18n="co.note">Note pour la vendeuse</span><textarea name="note" dir="auto" rows="2" data-i18n-ph="co.notePh"></textarea></label>
+
+      <div class="form__sum"><div id="coSummary"></div></div>
+
+      <div class="form__actions">
+        <button class="btn btn--solid" type="submit">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg>
+          <span data-i18n="co.send">Envoyer ma commande</span>
+        </button>
+      </div>
+      <p class="form__hint" data-i18n="co.hint">Ta commande arrive directement chez la vendeuse. Aucun paiement en ligne : tu règles à la livraison ou en main propre.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ══════════ QUICK VIEW ══════════ -->
+<div class="modal" id="quick" aria-hidden="true">
+  <div class="modal__panel modal__panel--quick glass" role="dialog" aria-modal="true" id="quickPanel"></div>
+</div>
+
+<!-- ══════════ COMMANDE ENREGISTRÉE ══════════ -->
+<div class="modal" id="confirm" aria-hidden="true">
+  <div class="modal__panel glass" role="dialog" aria-modal="true" aria-labelledby="okTitle">
+    <header class="modal__head">
+      <h2 id="okTitle" data-i18n="ok.title">Commande enregistrée</h2>
+      <button class="icon-btn" data-close data-i18n-aria="a.close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+    <div class="form">
+      <p class="ok__lede" data-i18n="ok.lede">On te rappelle au numéro indiqué pour confirmer le stock, le lieu et le créneau.</p>
+      <p class="ok__ref"><span data-i18n="ok.ref">Référence</span><b id="okRef">—</b></p>
+      <textarea id="okText" class="ok__ta" dir="auto" rows="10" readonly data-i18n-aria="ok.aria"></textarea>
+      <p class="form__hint" data-i18n="ok.hint">Pas de nouvelles sous 24 h ? Garde cette référence et écris-nous depuis la page Contact.</p>
+      <div class="form__actions">
+        <button class="btn btn--solid" type="button" data-close>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4 10-10"/></svg>
+          <span data-i18n="ok.close">Parfait</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ ÉCRAN DE LANGUE ══════════ -->
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle" aria-hidden="true">
+  <div class="gate__box glass">
+    <img src="assets/brand/logo.jpeg" alt="" width="76" height="76">
+    <p class="gate__eyebrow">accessories.by.lym</p>
+    <h2 class="gate__title" id="gateTitle" data-i18n="gate.title">Choisis ta langue</h2>
+    <p class="gate__sub" data-i18n="gate.sub">Choose your language · اختر لغتك</p>
+    <div class="gate__opts">
+      <button class="gate__opt" type="button" data-lang="fr"><b lang="fr">Français</b><span>FR</span></button>
+      <button class="gate__opt" type="button" data-lang="ar"><b lang="ar">العربية</b><span>AR</span></button>
+      <button class="gate__opt" type="button" data-lang="en"><b lang="en">English</b><span>EN</span></button>
+    </div>
+    <p class="gate__note" data-i18n="gate.note">Tu pourras changer de langue à tout moment.</p>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
